@@ -10,3 +10,5 @@ Open to your Suggestions!
 3) Copy path of index.html and paste it in your browser (Chrome Recommended)
 
 Thank You!
+
+Glider.js :- https://nickpiscitelli.github.io/Glider.js/
