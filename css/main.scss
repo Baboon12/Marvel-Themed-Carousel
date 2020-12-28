@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(238, 54, 54);
+    margin: 0;
+    padding: 0;
+}
+
+.glider-contain{
+    width: 85%;
+    height: 100vh;
+    display: block;
+}
+
+figure{
+    width: 350px;
+    height: 800px;
+    background-color: rgb(44, 44, 44);
+    display: block;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.8); 
+
+    .marvel{
+        margin-bottom: 30px;
+        color: rgb(90, 88, 88);
+        font-size: 23px;
+    }
+
+    .model{
+        height: 350px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    #deadpool{
+        margin-left: 70px;
+    }
+
+    .details{
+        display: inline-block;
+        text-align: center;
+        width: 300px;
+
+        .logo{
+            height: 80px;
+            margin: 10px;
+        }
+    
+        blockquote{
+            margin: 10px;
+            font-size: 1.5em;
+            text-align: center;
+            color: #7b7986;
+        }
+    }
+}
+
+.glider-next {
+    right: -30px;
+    top: 40%;
+ }
+ 
+ .glider-prev {
+     left: -30px;
+     top: 40%;
+ }
+
+ .glider figure:hover{
+    transform-style: preserve-3d;
+    transform: scale(1.01);
+    transition: all ease 0.3s;
+ }
+
+.glider  figure:hover h3{
+     color: #ff0000;
+     transition: all ease 0.5s;
+ }

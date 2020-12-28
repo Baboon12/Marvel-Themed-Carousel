@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel = "icon" href ="/images/marvel-logo.png" type="image/x-icon">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+</head>
+<body>
+    <div class="glider-contain">
+        <!-- <h1>Customized Carousel</h1> -->
+        <button class="glider-prev">
+            <i class="uil uil-arrow-circle-left"></i>
+        </button>
+
+        <div class="glider">
+            <figure>
+                <h3 class="marvel">Marvel</h3>
+                <img src="images/Ant-Man.png" alt="AntMan" class="model">
+                <section class="details">
+                    <img src="images/AntMan-logo.png" alt="Ant-Man Logo" class="logo" width="100px" style="height: auto;">
+                    <blockquote>Hi! I am AntMan</blockquote>
+                </section>
+            </figure>
+
+            <figure>
+                <h3 class="marvel">Marvel</h3>
+                <img src="images/DeadPool.png" alt="DeadPool" class="model" id="deadpool">
+                <section class="details">
+                    <img src="images/Deadpool-logo.png" alt="Deadpool Logo" class="logo" width="100px" style="height: auto;">
+                    <blockquote>Hi! I am DeadPool</blockquote>
+                </section>
+            </figure>
+
+            <figure>
+                <h3 class="marvel">Marvel</h3>
+                <img src="images/IronMan.png" alt="IronMan" class="model">
+                <section class="details">
+                    <img src="images/IronMan-logo.png" alt="IronMan Logo" class="logo" width="100px" style="height: auto;">
+                    <blockquote>Hi! I am IronMan</blockquote>
+                </section>
+            </figure>
+
+            <figure>
+                <h3 class="marvel">Marvel</h3>
+                <img src="images/SpiderMan.png" alt="SpiderMan" class="model">
+                <section class="details">
+                    <img src="images/SpiderMan-logo-1.png" alt="SpiderMan Logo" class="logo" width="100px" style="height: auto;">
+                    <blockquote>Hi! I am SpiderMan</blockquote>
+                </section>
+            </figure>
+
+            <figure>
+                <h3 class="marvel">Marvel</h3>
+                <img src="images/Thor.png" alt="Thor" class="model">
+                <section class="details">
+                    <img src="images/Thor-logo.png" alt="Thor Logo" class="logo" width="100px" style="height: auto;">
+                    <blockquote>Hi! I am Thor</blockquote>
+                </section>
+            </figure>
+
+            <figure>
+                <h3 class="marvel">Marvel</h3>
+                <img src="images/Venom.png" alt="Venom" class="model">
+                <section class="details">
+                    <img src="images/Venom-logo.png" alt="Venom Logo" class="logo" width="100px" style="height: auto;">
+                    <blockquote>Hi! I am Venom</blockquote>
+                </section>
+            </figure>
+        </div>
+
+        <button class="glider-next">
+            <i class="uil uil-arrow-circle-right"></i>
+        </button>
+
+        <div id="dots" class="glider-dots" role="tablist"></div>
+    </div>
+
+
+    <script src="glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), 
+        {
+            // Mobile-first defaults
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            scrollLock: true,
+            draggable: true,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: 
+            [
+                {
+                 // screens greater than >= 775px
+                    breakpoint: 600,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: '1.5',
+                        slidesToScroll: 'auto',
+                        draggable: true,
+                        itemWidth: 150,
+                        duration: 0.25
+                    }
+                },
+                {
+                    // screens greater than >= 1024px
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        draggable: true,
+                        itemWidth: 150,
+                        duration: 0.25
+                    }
+                }
+            ]
+         });
+    </script>
+</body>
+</html>
